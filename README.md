@@ -5,13 +5,13 @@ This project implements a real-time data pipeline that ingests weather data from
 
 ## 🔧 Technologies Used
 
-- **Weather API** (data source)
-- **Amazon S3** (raw and processed storage)
-- **EC2** (Python producer to Kafka)
-- **Apache Kafka** (streaming platform)
-- **Apache Spark (PySpark)** (stream processing and sentiment analysis)
-- **Snowflake** (data warehouse)
-- **Power BI** (dashboard/visualization)
+- Weather API
+- Amazon S3
+- EC2
+- Apache Kafka
+- Apache Spark (PySpark)
+- Snowflake
+- Power BI
 
 
 ## 🔄 Data Flow
@@ -42,9 +42,9 @@ The sentiment score is calculated using a custom Python-based algorithm without 
 - Each word contributes to a sentiment score.
 - Final sentiment is determined based on the computed polarity:
 
-- **Positive**: score > 0.1  
-- **Neutral**: -0.1 ≤ score ≤ 0.1  
-- **Negative**: score < -0.1  
+- Positive: score > 0.1  
+- Neutral: -0.1 ≤ score ≤ 0.1  
+- Negative: score < -0.1  
 
 
 
