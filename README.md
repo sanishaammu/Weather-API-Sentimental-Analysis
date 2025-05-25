@@ -70,7 +70,7 @@ Uses boto3 to read from S3.
 Uses kafka-python or confluent_kafka to push to Kafka.
 
 Kafka Setup
-Hosted on EC2 or MSK.
+Hosted on EC2.
 
 Topic: weather_data_raw
 
@@ -92,11 +92,11 @@ Connects directly to Snowflake.
 Visualizes time-series trends, sentiment by city, etc.
 
 
-- *Automation Triggers:*
-  - *Lambda Trigger: Create a CloudWatch EventBridge rule to trigger the Lambda function every **15 minutes*.
-  - *Snowflake Task: Set up to run every **5 minutes* to load newly arrived S3 data.
-  - *Glue Streaming Job*: Automatically picks up new Kafka data as it arrives.
-  - 
+  -  Automation Triggers:
+  - Lambda Trigger: Create a CloudWatch EventBridge rule to trigger the Lambda function every **15 minutes.
+  - Snowflake Task: Set up to run every **5 minutes to load newly arrived S3 data.
+  - Glue Streaming Job: Automatically picks up new Kafka data as it arrives.
+
 
 🔐 Security & Monitoring
 
