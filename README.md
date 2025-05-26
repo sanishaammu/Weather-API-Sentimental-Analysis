@@ -137,8 +137,6 @@ Use Snowflake usage dashboards and Power BI alerts.
 
 ![Architecture](architecture.jpge)
 
-
-
 ## ✅ Conclusion
 
 This project demonstrates a robust, cloud-native data pipeline for real-time weather sentiment analysis. By integrating services like Amazon S3, Kafka, PySpark, Snowflake, and Power BI, it showcases end-to-end data engineering — from ingestion to insightful visualization.The custom-built sentiment analysis logic ensures flexibility and independence from third-party NLP libraries, allowing for tailored analysis of weather descriptions.Weather for academic purposes, production-grade pipelines, or learning modern data workflows, this architecture provides a scalable and adaptable foundation.
