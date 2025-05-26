@@ -28,10 +28,10 @@ CREATE OR REPLACE FILE FORMAT weather_format
 
 
  CREATE OR REPLACE STAGE sentiment_stage
-  URL = 's3://weather-api1/output/'
+  URL = 's3://bucket-name/output/'
   CREDENTIALS = (
-    AWS_KEY_ID = 'AKIAWNHTHTLOSL2LI77W'
-    AWS_SECRET_KEY = 'jb22IVX0IZVGTt1qPNi2k+vJwLDeXrTlmzSNoZJz'
+    AWS_KEY_ID = 'Aws-access-key'
+    AWS_SECRET_KEY = 'Aws-secret-key'
   )
   FILE_FORMAT = weather_format;
 
