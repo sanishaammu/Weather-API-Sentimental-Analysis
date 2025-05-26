@@ -30,7 +30,7 @@ schema = StructType([
 kafka_df = spark.readStream \
     .format("kafka") \
     .option("kafka.bootstrap.servers", "13.127.109.22:9092") \
-    .option("subscribe", "my-topic") \
+    .option("subscribe", "topic-name") \
     .option("startingOffsets", "latest") \
     .load()
 
@@ -66,8 +66,8 @@ sentiment_udf = udf(simple_sentiment, DoubleType())
 sentiment_df = parsed_df.withColumn("sentiment", sentiment_udf(col("condition")))
 
 # Output to S3
-output_path = "s3://weather-api1/output/"
-checkpoint_path = "s3://weather-api1/checkpoints/"
+output_path = "s3://bucket-name/output/"
+checkpoint_path = "s3://bucket-name/checkpoints/"
 
 query = sentiment_df.writeStream \
     .format("csv") \
