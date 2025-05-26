@@ -44,9 +44,25 @@ The sentiment score is calculated using a custom Python-based algorithm without 
 
 - Positive: score > 0.1  
 - Neutral: -0.1 ≤ score ≤ 0.1  
-- Negative: score < -0.1  
+- Negative: score < -0.1
+  
 
+## 📊 Example Output
 
+| Weather Condition | Sentiment Score |
+| ----------------- | --------------- |
+| Sunny             | 0.78            |
+| Clear             | 0.72            |
+| Partly cloudy     | 0.35            |
+| Mist              | -0.23           |
+| Overcast          | -0.41           |
+| Rain              | -0.58           |
+| Thunderstorm      | -0.75           |
+| Snow              | 0.10            |
+| Fog               | -0.30           |
+| Drizzle           | -0.40           |
+| Hot and humid     | -0.55           |
+| Cool breeze       | 0.60            |
 
 
 ## 📂 Project Files
