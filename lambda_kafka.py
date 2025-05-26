@@ -12,8 +12,8 @@ API_KEY = os.environ.get("WEATHER_ID")
 BASE_URL = "http://api.weatherapi.com/v1/current.json"
 
 # Kafka settings
-KAFKA_BROKER = "13.127.109.22:9092"  # 👈 Replace with your EC2 IP
-KAFKA_TOPIC = "my-topic"
+KAFKA_BROKER = "EC2 ip adress"  # 👈 Replace with your EC2 IP
+KAFKA_TOPIC = "topic-name"
 
 def get_weather_data(location):
     if not API_KEY:
@@ -78,8 +78,8 @@ def lambda_handler(event, context):
 
     try:
         s3_client.put_object(
-            Bucket="weather-api1",
-            Key="raw_data/to_processed/" + filename,
+            Bucket="bucket-name",
+            Key="folder-name" + filename,
             Body=json.dumps(weather_data)
         )
     except Exception as e:
